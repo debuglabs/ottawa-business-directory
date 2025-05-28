@@ -1,0 +1,5 @@
+{
+  "name": "Ottawa Business Directory",
+  "description": "A React application to explore, search, and filter business data. Features a modern UI with Tailwind CSS and interactive elements.",
+  "requestFramePermissions": []
+}
