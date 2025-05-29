@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
           </p>
           <div className="flex justify-center md:justify-start space-x-4 mt-3">
             <a
-              href="https://github.com/barry-ruprai"
+              href="https://github.com/debuglabs/ottawa-business-directory"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
               </svg>
             </a>
             <a
-              href="https://linkedin.com/in/your-linkedin-profile" // Replace with your LinkedIn profile URL
+              href="https://linkedin.com/in/bruprai" // Replace with your LinkedIn profile URL
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
