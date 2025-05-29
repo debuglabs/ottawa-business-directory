@@ -93,13 +93,15 @@ const App: React.FC = () => {
   };
 
   useEffect(() => {
+    const fullPath = import.meta.env.BASE_URL + "data/businesses.json";
+    const finalUrl = fullPath.replace(/\/\/+/g, "/");
+    console.log("Fetching data from:", finalUrl);
+
     const fetchBusinesses = async () => {
       setIsLoading(true);
       setError(null);
       try {
-        const response = await fetch(
-          import.meta.env.BASE_URL + "/data/businesses.json"
-        );
+        const response = await fetch(finalUrl);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
