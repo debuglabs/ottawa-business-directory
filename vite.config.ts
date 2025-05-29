@@ -3,7 +3,7 @@ import { defineConfig, loadEnv } from 'vite';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
-  const appBase = mode === 'development' ? '/' : '/ottawa-business-directory/';
+  const appBase = mode === 'development' ? '/' : '/obd/';
 
   // console.log debugging is good, keep it for now
   console.log('Vite config mode:', mode);
