@@ -97,7 +97,9 @@ const App: React.FC = () => {
       setIsLoading(true);
       setError(null);
       try {
-        const response = await fetch("/data/businesses.json");
+        const response = await fetch(
+          import.meta.env.BASE_URL + "/data/businesses.json"
+        );
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
